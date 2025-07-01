@@ -3,7 +3,7 @@ function App() {
     <>
       <div className="hero ">
         <div>
-          <h1 className="md:text-5xl lg:text-6xl font-bold mb-7 text-3xl my-10 md:my-12 lg:my-13 animate__animated animate__fadeInDown animate__delay-2s">
+          <h1 className="md:text-5xl lg:text-6xl font-bold mb-7 text-[27px] my-10 md:my-12 lg:my-13 animate__animated animate__fadeInDown animate__delay-2s">
             Hai, Saya Raihan Thaffan.
           </h1>
           <p className="text-2xl md:text-3xl lg:text-4xl mb-10 animate__animated animate__fadeInUp animate__delay-3s">
@@ -134,7 +134,7 @@ function App() {
               href="https://cryptomania-app.vercel.app/AI"
               target="_blank"
               rel="noopener noreferrer"
-              className="italic text-2xl md:text-3xl lg:text-4xl bg-[#696969] p-4 rounded-2xl hover:bg-[#808080]"
+              className="italic text-xl md:text-3xl lg:text-4xl bg-[#696969] p-4 rounded-2xl hover:bg-[#808080]"
               data-aos="fade-up"
               data-aos-duration="1500"
             >
@@ -146,7 +146,7 @@ function App() {
               href="https://github.com/Raihan9102/crypto-mania/tree/bbd948674977595f41b6b4c33605f7e939e08a5f/src"
               target="_blank"
               rel="noopener noreferrer"
-              className="italic text-2xl  md:text-3xl lg:text-4xl bg-[#696969] p-4 rounded-2xl hover:bg-[#808080]"
+              className="italic text-xl  md:text-3xl lg:text-4xl bg-[#696969] p-4 rounded-2xl hover:bg-[#808080]"
               data-aos="fade-down"
               data-aos-duration="1500"
             >
@@ -211,7 +211,7 @@ function App() {
               href="https://www.tinkercad.com/things/kg79GtpWaSQ-magnificent-rottis/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=wCYvbc2WEY2uRxNBIdB_I8HOngmrJJwIBeNs6F3fQrQ"
               target="_blank"
               rel="noopener noreferrer"
-              className="italic text-2xl md:text-3xl lg:text-4xl bg-[#696969] p-4 rounded-2xl hover:bg-[#808080] "
+              className="italic text-xl md:text-3xl lg:text-4xl bg-[#696969] p-4 rounded-2xl hover:bg-[#808080] "
               data-aos="fade-down"
               data-aos-duration="1500"
             >
