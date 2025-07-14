@@ -7,7 +7,7 @@ const Footer = () => {
           Beranda
         </a>
         <a href="#tentang" className="hover:text-[#696969]">
-          Tentang{" "}
+          Tentang
         </a>
         <a href="#proyek" className="hover:text-[#696969]">
           Proyek
