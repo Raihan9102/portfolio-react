@@ -31,7 +31,7 @@ function App() {
       {/* Tentang*/}
 
       <div
-        className="tentang mt-40 py-35  grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center lg:gap-10 animate__animated animate__fadeInUp animate__delay-5s"
+        className="tentang mt-0 py-20  grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center lg:gap-10 animate__animated animate__fadeInUp animate__delay-5s"
         id="tentang"
       >
         <img
@@ -73,7 +73,7 @@ function App() {
 
       {/*Projek */}
 
-      <div className="projek mt-40  py-10 " id="proyek">
+      <div className="projek mt-0  py-15  " id="proyek">
         <h1
           className="italic text-4xl md:text-5xl lg:text-6xl mb-10 font-bold"
           data-aos="fade-up"
@@ -223,7 +223,7 @@ function App() {
 
       {/* Kontak */}
 
-      <div className="kontak mt-90 px-6 py-10 my-40  " id="kontak">
+      <div className="kontak mt-0 px-6 py-10 my-10 pt-15 " id="kontak">
         <div
           className=" text-4xl text-center mb-10 font-bold md:text-6xl"
           data-aos="fade-up"
