@@ -31,13 +31,13 @@ function App() {
       {/* Tentang*/}
 
       <div
-        className="tentang mt-0 py-20  grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center lg:gap-10 animate__animated animate__fadeInUp animate__delay-5s"
+        className="tentang mt-0 py-30  grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center lg:gap-10 animate__animated animate__fadeInUp animate__delay-5s"
         id="tentang"
       >
         <img
-          src="asset/portfolio/image.jpeg"
+          src="asset/portfolio/pp.jpeg"
           alt="Image"
-          className="w-80  rounded-xl shadow-lg  mb-10 mx-auto md:w-150 lg:w-125 lg:mx-auto "
+          className="w-80  rounded-xl  mb-10 mx-auto md:w-150 lg:w-125 lg:mx-auto "
           data-aos="fade-up"
           data-aos-duration="1500"
         />
@@ -223,7 +223,7 @@ function App() {
 
       {/* Kontak */}
 
-      <div className="kontak mt-0 px-6 py-10 my-10 pt-15 " id="kontak">
+      <div className="kontak mt-0 px-6 py-10 my-10 pt-15" id="kontak">
         <div
           className=" text-4xl text-center mb-10 font-bold md:text-6xl"
           data-aos="fade-up"
@@ -232,7 +232,7 @@ function App() {
           <h1>Kontak Saya</h1>
         </div>
         <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
-          <div className="text-3xl  bg-[#696969] space-y-4  rounded-xl justify-center px-7 py-2 lg:py-17">
+          <div className="text-3xl  bg-[#696969] space-y-4  rounded-xl justify-center px-7 py-2 lg:py-10">
             <div className="border border-[#ffff] rounded-2xl p-4 space-y-6 my-7 px-4 text-2xl md:p-6 md:space-y-8 ">
               <ul className="italic">
                 <li className="flex items-center gap-3 px-6">
@@ -307,13 +307,34 @@ function App() {
                     data-aos="fade-down"
                     data-aos-duration="20a00"
                   >
-                    <i className="ri-github-line ri-lg hover:text-[#1E90FF] cursor-pointer"></i>
+                    <i className="ri-github-line ri-lg hover:text-[#1E1E1E] cursor-pointer"></i>
                     <span
                       className="text-2xl md:text-3xl lg:text-3xl"
                       data-aos="fade-up"
                       data-aos-duration="2000"
                     >
                       Github
+                    </span>
+                  </a>
+                </li>
+              </ul>
+              <ul className="italic">
+                <li className="flex items-center gap-3 px-6">
+                  <a
+                    href="https://www.linkedin.com/in/muhammad-raihan-thaffan-hidayat-21091826b"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 text-2xl md:text-4xl lg:text-5xl"
+                    data-aos="fade-down"
+                    data-aos-duration="20a00"
+                  >
+                    <i className="ri-linkedin-box-line ri-lg hover:text-[#1E90FF] cursor-pointer"></i>
+                    <span
+                      className="text-2xl md:text-3xl lg:text-3xl"
+                      data-aos="fade-up"
+                      data-aos-duration="2000"
+                    >
+                      LinkedIn
                     </span>
                   </a>
                 </li>
@@ -329,7 +350,7 @@ function App() {
               <div className="flex flex-col gap-2">
                 <div className="flex flex-col gap-1">
                   <label
-                    className="font-semibold  md:text-3xl"
+                    className="font-semibold  md:text-3xl "
                     data-aos="fade-right"
                     data-aos-duration="2000"
                   >
@@ -387,7 +408,7 @@ function App() {
                 <div className="text-center">
                   <button
                     type="submit"
-                    className="bg-[#a6a6a6] hover:bg-[#1E90FF] rounded-2xl p-2 w-full cursor-pointer md:text-3xl"
+                    className="bg-[#a6a6a6] hover:bg-[#1E90FF] rounded-2xl p-2  w-full cursor-pointer md:text-3xl"
                     data-aos="fade-up"
                     data-aos-duration="2000"
                   >
