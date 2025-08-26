@@ -1,7 +1,7 @@
 export default function Tentang() {
   return (
     <div className="tentang mt-0  mb-20" id="tentang">
-      <h1 className=" text-3xl lg:text-5xl md:text-5xl text-center font-semibold  my-8">
+      <h1 className=" text-3xl lg:text-5xl md:text-5xl text-center font-semibold  my-9">
         Tentang Saya
       </h1>
       <div className=" grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center lg:gap-10 my-12">
@@ -14,7 +14,7 @@ export default function Tentang() {
           <h1 className=" text-2xl lg:text-[32px] md:text-[39px]  mb-2 text-center md:text-left ">
             Muhammad Raihan Thaffan Hidayat
           </h1>
-          <ul className="list-disc pl-10  text-[18px] lg:text-[28px] md:text-[30px] mb-2 ">
+          <ul className="list-disc pl-10  text-[18px] lg:text-[28px] md:text-[30px] mb-2 lg:mb-10">
             <li>Kampus : Telkom University</li>
             <li>Jurusan : Teknik Telekomunikasi</li>
             <li>Usia : 20 Tahun</li>
