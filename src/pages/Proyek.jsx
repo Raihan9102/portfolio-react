@@ -19,7 +19,10 @@ export default function Proyek() {
           <h3 className="text-[27px] md:text-4xl lg:text-4xl  text-center mb-4 ">
             Front-End
           </h3>
-          <ul className="text-[18px] list-disc bg-gradient-to-b from-blue to-black pl-10 rounded-2xl lg:text-2xl p-6 lg:border border-white rounded-2xl">
+          <ul
+            className=" text-[18px] list-disc bg-gradient-to-b from-blue to-black pl-10 rounded-2xl lg:text-2xl p-6  lg:p-9 lg:pb-11
+             lg:border border-white rounded-2xl lg:items-center"
+          >
             <li>
               Mengembangkan antarmuka pengguna website cryptocurrency
               menggunakan React.js dan CSS untuk menampilkan data pasar kripto
@@ -71,10 +74,13 @@ export default function Proyek() {
           />
         </div>
         <div className="border border-white rounded-2xl lg:border-0">
-          <h2 className="text-[27px] md:text-4xl lg:text-4xl  md:mb-8 mb-1 lg:mb-12  text-center">
+          <h2 className="text-[27px] md:text-4xl lg:text-4xl  md:mb-8 mb-1 lg:mb-4  text-center">
             IoT Developer
           </h2>
-          <ul className="text-[18px] list-disc lg:text-2xl bg-gradient-to-b from-blue to-black pl-10 p-1 rounded-2xl lg:border border-white rounded-2xl">
+          <ul
+            className="text-[18px] list-disc bg-gradient-to-b from-blue to-black pl-10 rounded-2xl lg:text-2xl p-6  lg:p-9 lg:pb-7
+             lg:border border-white rounded-2xl lg:items-center"
+          >
             <li>
               Mengembangkan sistem alat bantu berbasis IoT untuk tunanetra
               menggunakan mikrokontroler ESP32 guna mendeteksi rintangan dan

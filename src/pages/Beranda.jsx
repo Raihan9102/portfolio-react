@@ -12,7 +12,7 @@ export default function Beranda() {
           saya menyadari bahwa kemampuan saya masih perlu ditingkatkan, saya
           memiliki semangat dan kesiapan untuk terus belajar dan berkembang.
         </p>
-        <div className="flex justify-center  mb-19 lg:mb-23  ">
+        <div className="flex justify-center  mb-21 lg:mb-10  ">
           <a
             href="\cv\cv_raihan.pdf"
             target="_blank"
