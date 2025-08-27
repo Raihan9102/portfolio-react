@@ -1,6 +1,6 @@
 export default function Beranda() {
   return (
-    <div className="hero lg:mb-20 md:mb-74 ">
+    <div className="hero lg:mb-20 md:mb-74  ">
       <div>
         <h1 className="md:text-5xl lg:text-6xl font-bold lg:mb-7 mb-2 text-2xl my-10 md:my-12 lg:my-13 lg:px-8 px-0 mt-5">
           Hai, Saya Raihan Thaffan.
