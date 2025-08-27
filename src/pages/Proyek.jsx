@@ -4,7 +4,7 @@ export default function Proyek() {
       <h1 className="my-8 text-center text-3xl md:text-5xl lg:text-6xl mb-10 font-semibold">
         Projek Kolaborasi
       </h1>
-      <div className="grid grid-cols-1  lg:grid-cols-2 gap-10">
+      <div className="grid grid-cols-1  lg:grid-cols-2 gap-10 lg:gap-2">
         <div>
           <h2 className="text-[27px] md:text-4xl lg:text-4xl mb-3 md:mb-4 text-center">
             Website CryptoCurrency
@@ -20,8 +20,8 @@ export default function Proyek() {
             Front-End
           </h3>
           <ul
-            className=" text-[18px] list-disc bg-gradient-to-b from-blue to-black pl-10 rounded-2xl lg:text-2xl p-6  lg:p-9 lg:pb-11
-             lg:border border-white rounded-2xl lg:items-center"
+            className=" text-[18px] list-disc bg-gradient-to-b from-blue to-black pl-10 rounded-2xl lg:text-2xl p-6  lg:p-10 lg:pb-10
+             lg:border border-white rounded-2xl lg:items-center "
           >
             <li>
               Mengembangkan antarmuka pengguna website cryptocurrency
@@ -40,7 +40,7 @@ export default function Proyek() {
           </ul>
         </div>
       </div>
-      <div className="flex justify-center mt-10 gap-7">
+      <div className="flex justify-center mt-10 gap-10 ">
         <p>
           <a
             href="https://cryptomania-app.vercel.app/AI"
