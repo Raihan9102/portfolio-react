@@ -40,7 +40,7 @@ export default function Proyek() {
           </ul>
         </div>
       </div>
-      <div className="flex justify-center mt-10 gap-10 ">
+      <div className="flex justify-center mt-10 gap-6 lg:mr-4  ">
         <p>
           <a
             href="https://cryptomania-app.vercel.app/AI"
