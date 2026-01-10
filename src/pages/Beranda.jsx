@@ -14,7 +14,7 @@ export default function Beranda() {
         </p>
         <div className="flex justify-center  mb-23 lg:mb-10  ">
           <a
-            href="\cv\cv_raihan.pdf"
+            href="\cv\cv_english.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="  text-[20px] md:text-5xl  lg:text-4xl bg-gradient-to-b from-blue to-black text-[#FFFF] p-2 rounded-2xl hover:bg-gradient-to-b hover:from-black hover:to-white md:p-4 lg:p-5 lg:my-4 mb-6"
