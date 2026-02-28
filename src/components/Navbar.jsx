@@ -1,62 +1,124 @@
-import { NavLink } from "react-router-dom";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 
-const linkBase =
-  "sm:text-lg text-base font-medium md:text-[22px] lg:text-2xl transition hover:text-[#0065FF]";
-const active = "text-[#2B7FFF]";
+const Navbar = ({ activeSection }) => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-export default function Navbar() {
+  const navItems = [
+    { id: "home", label: "Home" },
+    { id: "about", label: "About" },
+    { id: "skills", label: "Skills" },
+    { id: "projects", label: "Projects" },
+    { id: "contact", label: "Contact" },
+  ];
+
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      setIsMobileMenuOpen(false);
+    }
+  };
+
   return (
-    <header className="background: linear-gradient(to bottom, #6eb9f7, #1f2b48);">
-      <div className="container mx-auto  px-0 py-0 md:flex md:px-1 md:py-2 lg:px-2 lg:py-3 md:items-center md:justify-between lg:flex lg:items-center lg:justify-between ">
-        <h1 className=" text-2xl md:text-[45px] lg:text-5xl font-bold text-white text-center mb-2 ">
-          PORTFOLIO
-        </h1>
+    <motion.nav
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      className="fixed top-0 left-0 right-0 z-50 px-6 py-4"
+    >
+      <div className="max-w-7xl mx-auto glass-effect rounded-2xl px-6 py-4">
+        <div className="flex items-center justify-between">
+          {/* Logo */}
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            className="text-2xl font-bold gradient-text cursor-pointer"
+            onClick={() => scrollToSection("home")}
+          >
+            Portfolio
+          </motion.div>
 
-        {/* Menu konsisten di semua ukuran layar */}
-        <ul className="flex items-center gap-6  md:gap-7 pb-1  justify-center border-b border-white lg:border-0 md:border-0">
-          <li>
-            <NavLink
-              to="/"
-              end
-              className={({ isActive }) =>
-                `${linkBase} ${isActive ? active : "text-white"}`
-              }
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center space-x-8">
+            {navItems.map((item) => (
+              <motion.button
+                key={item.id}
+                onClick={() => scrollToSection(item.id)}
+                className={`relative px-4 py-2 text-sm font-medium transition-colors ${
+                  activeSection === item.id
+                    ? "text-white"
+                    : "text-gray-300 hover:text-white"
+                }`}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                {item.label}
+                {activeSection === item.id && (
+                  <motion.div
+                    layoutId="activeSection"
+                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-purple-500 to-blue-500"
+                  />
+                )}
+              </motion.button>
+            ))}
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="md:hidden p-2 text-white"
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
             >
-              Beranda
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/tentang"
-              className={({ isActive }) =>
-                `${linkBase} ${isActive ? active : "text-white"}`
-              }
-            >
-              Tentang
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/proyek"
-              className={({ isActive }) =>
-                `${linkBase} ${isActive ? active : "text-white"}`
-              }
-            >
-              Proyek
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/kontak"
-              className={({ isActive }) =>
-                `${linkBase} ${isActive ? active : "text-white"}`
-              }
-            >
-              Kontak
-            </NavLink>
-          </li>
-        </ul>
+              {isMobileMenuOpen ? (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              ) : (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              )}
+            </svg>
+          </button>
+        </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            className="md:hidden mt-4 space-y-2"
+          >
+            {navItems.map((item) => (
+              <button
+                key={item.id}
+                onClick={() => scrollToSection(item.id)}
+                className={`block w-full text-left px-4 py-2 rounded-lg transition-colors ${
+                  activeSection === item.id
+                    ? "bg-white/10 text-white"
+                    : "text-gray-300 hover:bg-white/5 hover:text-white"
+                }`}
+              >
+                {item.label}
+              </button>
+            ))}
+          </motion.div>
+        )}
       </div>
-    </header>
+    </motion.nav>
   );
-}
+};
+
+export default Navbar;

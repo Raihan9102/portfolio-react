@@ -1,32 +1,58 @@
-import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar.jsx";
-import Footer from "./components/Footer.jsx";
-import PreLoader from "./components/PreLoader.jsx";
-
-import Beranda from "./pages/Beranda.jsx";
-import Tentang from "./pages/Tentang.jsx";
-import Proyek from "./pages/Proyek.jsx";
-import Kontak from "./pages/Kontak.jsx";
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import BackgroundBlobs from "./components/BackgroundBlobs";
 
 function App() {
+  const [activeSection, setActiveSection] = useState("home");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ["home", "about", "skills", "projects", "contact"];
+      const scrollPosition = window.scrollY + 100;
+
+      for (const section of sections) {
+        const element = document.getElementById(section);
+        if (element) {
+          const { offsetTop, offsetHeight } = element;
+          if (
+            scrollPosition >= offsetTop &&
+            scrollPosition < offsetTop + offsetHeight
+          ) {
+            setActiveSection(section);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <>
-      <PreLoader />
-      <div className="container mx-auto px-3">
-        <Navbar />
-        <div className="border-b-2 border-white mt-[0.1px] hidden md:block mb-10"></div>
+    <div className="relative min-h-screen bg-gradient-to-br from-[#0f0c29] via-[#302b63] to-[#24243e] text-white overflow-hidden">
+      <BackgroundBlobs />
+      <Navbar activeSection={activeSection} />
 
-        <Routes>
-          <Route path="/" element={<Beranda />} />
-          <Route path="/tentang" element={<Tentang />} />
-          <Route path="/proyek" element={<Proyek />} />
-          <Route path="/kontak" element={<Kontak />} />
-        </Routes>
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+      </main>
 
-        <div className="border-b-2 border-white mt-[0.1px]"></div>
-        <Footer />
-      </div>
-    </>
+      {/* Footer */}
+      <footer className="relative z-10 py-8 text-center border-t border-white/10">
+        <p className="text-gray-400">© Muhammad Raihan Thaffan Hidayat</p>
+      </footer>
+    </div>
   );
 }
 
