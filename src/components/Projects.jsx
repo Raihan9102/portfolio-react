@@ -36,48 +36,48 @@ const Projects = () => {
         "Prediction Price",
       ],
     },
-    {
-      id: 2,
-      title: "Smart Home IoT System",
-      category: "IoT",
-      description:
-        "IoT-based home automation system with temperature monitoring and remote control capabilities.",
-      fullDescription:
-        "An integrated smart home system using ESP32 microcontrollers, DHT sensors, and MQTT protocol. Control lights, monitor temperature/humidity, and receive real-time notifications through a web dashboard.",
-      image:
-        "https://images.unsplash.com/photo-1558002038-1055907df827?w=800&h=500&fit=crop",
-      tech: ["ESP32", "Arduino", "MQTT", "React", "Node.js"],
-      demoLink: "#",
-      githubLink: "#",
-      features: [
-        "Temperature monitoring",
-        "Remote device control",
-        "Real-time alerts",
-        "Energy consumption tracking",
-        "Mobile responsive",
-      ],
-    },
-    {
-      id: 3,
-      title: "Portfolio Website",
-      category: "Web",
-      description:
-        "Modern and interactive portfolio website with glassmorphism design and smooth animations.",
-      fullDescription:
-        "A stunning portfolio website featuring glassmorphism design trends, Framer Motion animations, and responsive layouts. Showcases projects with filtering capabilities and includes contact forms.",
-      image:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop",
-      tech: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
-      demoLink: "#",
-      githubLink: "#",
-      features: [
-        "Glassmorphism design",
-        "Smooth animations",
-        "Project filtering",
-        "Contact form",
-        "SEO optimized",
-      ],
-    },
+    // {
+    //   id: 2,
+    //   title: "Smart Home IoT System",
+    //   category: "IoT",
+    //   description:
+    //     "IoT-based home automation system with temperature monitoring and remote control capabilities.",
+    //   fullDescription:
+    //     "An integrated smart home system using ESP32 microcontrollers, DHT sensors, and MQTT protocol. Control lights, monitor temperature/humidity, and receive real-time notifications through a web dashboard.",
+    //   image:
+    //     "https://images.unsplash.com/photo-1558002038-1055907df827?w=800&h=500&fit=crop",
+    //   tech: ["ESP32", "Arduino", "MQTT", "React", "Node.js"],
+    //   demoLink: "#",
+    //   githubLink: "#",
+    //   features: [
+    //     "Temperature monitoring",
+    //     "Remote device control",
+    //     "Real-time alerts",
+    //     "Energy consumption tracking",
+    //     "Mobile responsive",
+    //   ],
+    // },
+    // {
+    //   id: 3,
+    //   title: "Portfolio Website",
+    //   category: "Web",
+    //   description:
+    //     "Modern and interactive portfolio website with glassmorphism design and smooth animations.",
+    //   fullDescription:
+    //     "A stunning portfolio website featuring glassmorphism design trends, Framer Motion animations, and responsive layouts. Showcases projects with filtering capabilities and includes contact forms.",
+    //   image:
+    //     "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop",
+    //   tech: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
+    //   demoLink: "#",
+    //   githubLink: "#",
+    //   features: [
+    //     "Glassmorphism design",
+    //     "Smooth animations",
+    //     "Project filtering",
+    //     "Contact form",
+    //     "SEO optimized",
+    //   ],
+    // },
     // {
     //   id: 4,
     //   title: "Weather Monitoring Station",
